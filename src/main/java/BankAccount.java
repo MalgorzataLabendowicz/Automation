@@ -3,7 +3,8 @@ public class BankAccount {
 
     //Konstruktor bezparametrowy//
 
-    public BankAccount(){accountBalance = 0;
+    public BankAccount(){
+        this.accountBalance = 0;
     }
     //Konstruktor parametrowy//
     public BankAccount(int accountBalance){
@@ -11,21 +12,17 @@ public class BankAccount {
     }
     //Metoda pierwsza//
     public boolean withdraw(int amount){
-
-        if (amount > accountBalance){
+        if (amount > this.accountBalance){
             return false;
-        }
-        else{
-            accountBalance = accountBalance - amount;
+        } this.accountBalance -= amount;
             return true;
-        }
     }
     //Metoda druga
     public void transfer(int amount){
-        accountBalance += amount;
+        this.accountBalance += amount;
     }
     //Metoda trzecia
     public int getAccountBalance(){
-        return(accountBalance);
+        return this.accountBalance;
     }
 }
