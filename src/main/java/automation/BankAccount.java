@@ -1,5 +1,7 @@
+package automation;
+
 public class BankAccount {
-    private int accountBalance;
+    public int accountBalance;
 
     //Konstruktor bezparametrowy//
 
