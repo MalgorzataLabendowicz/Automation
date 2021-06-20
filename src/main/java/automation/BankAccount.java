@@ -12,6 +12,7 @@ public class BankAccount {
     public BankAccount(int accountBalance){
         this.accountBalance = accountBalance;
     }
+
     //Metoda pierwsza//
     public boolean withdraw(int amount){
         if (amount > this.accountBalance){
@@ -23,6 +24,7 @@ public class BankAccount {
     public void transfer(int amount){
         this.accountBalance += amount;
     }
+
     //Metoda trzecia
     public int getAccountBalance(){
         return this.accountBalance;
